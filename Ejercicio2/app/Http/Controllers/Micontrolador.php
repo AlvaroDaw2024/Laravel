@@ -33,7 +33,7 @@ class Micontrolador extends Controller
         $arrayString = str_split($string);
         $contador = 0;
         foreach ($arrayString as $char) {
-            if ($char == $cadena) {
+            if (strtolower($char) == $cadena) {
                 $contador++;
               
         }
